@@ -1,7 +1,7 @@
 export default function Break() {
   return (
     <div class="py-24 lg:py-24 overflow-x-clip">
-      <div class="bg-gradient-to-r from-secondary to-primary py-3 -rotate-3 -mx-1 blur-sm hover:blur-none transition-all duration-[500ms] ease-in-out">
+      <div class=" bg-gradient-to-r from-secondary to-primary py-3 -rotate-3 -mx-1 blur-sm hover:blur-none transition-all duration-[500ms] ease-in-out">
         <div class="flex ">
           <div class="flex flex-none gap-4 pr-4">
             <div class="inline-flex items-center gap-4">

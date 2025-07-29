@@ -40,7 +40,7 @@ const SkillsGrid = () => {
 
       {/* Languages */}
       <div>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 ">
           <div className={iconStyle}><FaPython /> Python</div>
           <div className={iconStyle}><FaJsSquare /> JavaScript</div>
           <div className={iconStyle}><FaJava /> Java</div>

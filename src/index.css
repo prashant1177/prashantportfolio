@@ -84,16 +84,15 @@ html {
 
 @keyframes move {
   from {
-    margin-left: -100%;
+    margin-left: -150%;
   }
   to {
-    margin-left: 100%;
+    margin-left: 150%;
   }
 }
 .menFloating {
   animation: move 5s linear infinite;
   margin-left: 0px;
-  margin-top: 420px;
 }
 
 @keyframes moveTurtle {
@@ -135,6 +134,14 @@ html {
   display: inline-block;
   animation: slide 30s linear infinite;
   transition: all ease-in-out;
+}
+
+@media (max-width: 768px) {
+ .goLeftBadges {
+  display: inline-block;
+  animation: none;
+  transition: all ease-in-out;
+}
 }
 
 @keyframes glow {
