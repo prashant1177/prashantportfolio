@@ -4,11 +4,11 @@ export default function Hero() {
     <div class=" flex items-center justify-center h-screen w-full text-white overflow-hidden relative">
       <div className="flex items-center justify-center ">
         <div className="w-full h-full HeroSection absolute opacity-5 -z-30 "></div>
-        <div className="overflow-clip w-3/5 rounded-full absolute blur z-9 aspect-square shadow-2xl shadow-muted opacity-0 animate-[fadeIn_0.5s_ease-in_0.7s_forwards]">
+        <div className="overflow-clip w-3/5 rounded-full absolute blur z-9 aspect-square shadow-2xl shadow-muted opacity-0 animate-[fadeIn_0.3s_ease-in_0.7s_forwards]">
           <img src={men} className="menFloating z-30" />
         </div>
-        <div className="w-4/5 rounded-full absolute blur z-8 aspect-square shadow-2xl shadow-muted opacity-0 animate-[fadeIn_0.5s_ease-in_1.2s_forwards]"></div>
-        <div className="w-full  rounded-full absolute blur z-7 aspect-square shadow-2xl shadow-muted opacity-0 animate-[fadeIn_0.5s_ease-in_1.7s_forwards]"></div>
+        <div className="w-4/5 rounded-full absolute blur z-8 aspect-square shadow-2xl shadow-muted opacity-0 animate-[fadeIn_0.3s_ease-in_1.2s_forwards]"></div>
+        <div className="w-full  rounded-full absolute blur z-7 aspect-square shadow-2xl shadow-muted opacity-0 animate-[fadeIn_0.3s_ease-in_1.7s_forwards]"></div>
 
         <div class="flex flex-col items-center justify-center  h-screen w-full text-slate-200 overflow-hidden relative mt-8">
         
