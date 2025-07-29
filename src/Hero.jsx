@@ -12,15 +12,15 @@ export default function Hero() {
 
         <div class="flex flex-col items-center justify-center  h-screen w-full text-slate-200 overflow-hidden relative mt-8">
         
-          <h1 class="text-7xl text-center font-extrabold">Hey, I'm <br/>
+          <h1 class="text-7xl text-center font-extrabold font-mono">Hey, I'm <br/>
           Prashant Patil</h1>
           <p class="text-lg mb-8 text-center text-slate-400">
             I can build webapp with clean code and creative  <br />vision
             - turning ideas into reality.
           </p>
-          <button class="bg-primary mt-16 z-20 text-background px-6 py-3 rounded-lg hover:bg-primary/95 transition duration-300">
+          <a href="https://drive.google.com/file/d/19jP0bkKtFwY4UcMq1dMxlblgVw7ii8pu/view?usp=sharing" class="bg-primary mt-16 z-20 text-background px-6 py-3 rounded-lg hover:bg-primary/95 transition duration-300">
             Download Resume
-          </button>
+          </a>
         </div>
       </div>
     </div>

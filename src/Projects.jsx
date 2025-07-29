@@ -1,7 +1,4 @@
-import Break from "./Break";
-import job from "./assets/job.png";
-import notebot from "./assets/notebot.png";
-import hotel from "./assets/hotel.png";
+
 export default function Projects() {
   return (
     <div className="py-24">
@@ -91,8 +88,7 @@ export default function Projects() {
                 <a href="https://hotelbooking-phi.vercel.app/" className="px-6 py-2 text-xl bg-text text-slate-900 rounded-lg font-sans">View Live Site</a>
             </div>
             <div className="w-full h-full ps-8 pt-12">
-              <div className=" w-full h-full bg-green-200 rounded-tl-4xl overflow-hidden">
-                <img src={hotel} className="object-cover h-full start-0 " />
+              <div className=" w-full h-full bg-green-200 rounded-tl-4xl overflow-hidden project1">
               </div>
             </div>
           </div>
@@ -170,8 +166,7 @@ Deployed using Vercel.        </h6>
                 <a href="https://jobhunt-eight.vercel.app/" className="px-6 py-2 text-xl bg-text text-slate-900 rounded-lg font-sans">View Live Site</a>
             </div>
             <div className="w-full h-full ps-8 pt-12">
-              <div className=" w-full h-full bg-green-200 rounded-tl-4xl overflow-hidden">
-                <img src={job} className="object-cover h-full start-0 " />
+              <div className=" w-full h-full bg-green-200 rounded-tl-4xl overflow-hidden project2">
               </div>
             </div>
           </div>
@@ -246,11 +241,11 @@ Uses NLP to summarize and extract key content
                   </h6>
                 </div>{" "}
               </div>
-                <a className="px-6 py-2 text-xl bg-text text-slate-900 rounded-lg font-sans">View Live Site</a>
+                <a href="https://notes-bot-nine.vercel.app/" className="px-6 py-2 text-xl bg-text text-slate-900 rounded-lg font-sans">View Live Site</a>
             </div>
             <div className="w-full h-full ps-8 pt-12">
-              <div className=" w-full h-full bg-green-200 rounded-tl-4xl overflow-hidden">
-                <img src={notebot} className="object-cover h-full start-0 " />
+              <div className=" w-full h-full bg-green-200 rounded-tl-4xl overflow-hidden project3">
+                
               </div>
             </div>
           </div>

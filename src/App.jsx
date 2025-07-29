@@ -7,9 +7,9 @@ import Projects from "./Projects";
 import Tech from "./Tech";
 function App() {
   return (
-    <div className="font-mono text-text">
+    <div className="font-sans text-text">
       <Navbar />
-      <div id="hero">
+      <div id="home">
         {" "}
         <Hero />
       </div>
@@ -25,7 +25,7 @@ function App() {
         <Contact />
       </div>
       <hr />
-      <a href="#hero"><p className="text-center py-2">BACK TO TOP</p></a>
+      <a href="#home"><p className="text-center py-2">BACK TO TOP</p></a>
     </div>
   );
 }

@@ -22,9 +22,9 @@ export default function Tech() {
       </h3>
       <div className="my-4 w-4/6 flex flex-col gap-8 h-full">
         <div className="w-full flex gap-8 h-96">
-          <div className="w-full relative h-full p-8 bg-gray-800 rounded-3xl -z-20">
-            <div className="absolute inset-0 -z-10 opacity-5 HeroSection border-3 border-white rounded-3xl"></div>
-            <h1 className="text-2xl mb-4  font-extrabold opacity-100 text-slate-200">
+          <div className="w-full relative h-full p-8 bg-gray-800 -z-0 border-3 border-white/30 rounded-3xl">
+            <div className="absolute inset-0 -z-10 opacity-5 HeroSection"></div>
+            <h1 className="text-2xl mb-4  font-extrabold opacity-100 text-slate-200 font-mono">
               TECH STACK
             </h1>
             <div>
@@ -32,9 +32,9 @@ export default function Tech() {
             </div>
           </div>
 
-          <div className="w-1/3 relative h-96 py-8 bg-gray-800 rounded-3xl -z-20">
-            <div className="absolute inset-0 -z-10 opacity-5 HeroSection border-3 border-white rounded-3xl"></div>
-            <h1 className="text-2xl font-extrabold opacity-100 mb-8 ms-8">
+          <div className="w-1/3 relative h-96 py-8 bg-gray-800 z-0 border-3 border-white/30 rounded-3xl">
+            <div className="absolute inset-0 -z-10 opacity-5 HeroSection "></div>
+            <h1 className="text-2xl font-extrabold opacity-100 mb-8 ms-8 font-mono">
               LEETCODE
             </h1>
             <div className="flex flex-col justify-between h-64">
@@ -69,14 +69,14 @@ export default function Tech() {
 
         <div className="w-full flex gap-8 h-full">  <div className="absolute inset-0 -z-10 opacity-5 HeroSection  rounded-3xl"></div>
 
-          <div className="w-full relative p-4 px-8 flex h-48 bg-gray-800 rounded-3xl z-0 overflow-hidden">
-            <div className="absolute inset-0 -z-10 opacity-5 HeroSection border-3 border-white rounded-3xl"></div>
+          <div className="w-full relative p-4 px-8 flex h-48 bg-gray-800 border-3 border-white/30 rounded-3xl z-0 overflow-hidden">
+            <div className="absolute inset-0 -z-10 opacity-5 HeroSection"></div>
             <img
                 src="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/xyjhFCSSXZsW6HDBb/z9uutqyne98wdcpp83eg"
                 className="w-1/3 border-3 border-white/30 rounded-2xl"
               />
               <div className="px-4 py-2">
-            <h1 className="text-2xl mb-4  font-extrabold opacity-100 text-primary ">
+            <h1 className="text-2xl mb-4  font-extrabold opacity-100 text-primary font-mono">
               CURRENTLY WORKING ON
             </h1>
 

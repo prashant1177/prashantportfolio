@@ -139,9 +139,22 @@ html {
 
 @keyframes glow {
   0%, 100% {
-    filter: drop-shadow(0 0 5px var(--color-secondary));
+    filter: drop-shadow(0 0 5px var(--color-primary));
   }
   50% {
-    filter: drop-shadow(0 0 5px var(--color-secondary));
+    filter: drop-shadow(0 0 5px var(--color-primary));
   }
+}
+
+.project1{
+background-image: url("./assets/hotel.png");
+background-size: cover;
+}
+.project2{
+background-image: url("./assets/job.png");
+background-size: cover;
+}
+.project3{
+background-image: url("./assets/notebot.png");
+background-size: cover;
 }
