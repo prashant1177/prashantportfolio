@@ -12,7 +12,7 @@ export default function Contact() {
         />
 
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl text-center font-extrabold text-background z-10">
+        <h1 className="text-3xl md:text-5xl text-center font-extrabold text-background z-10 hidden md:block">
           Connect with me
         </h1>
 

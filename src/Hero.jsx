@@ -8,8 +8,8 @@ export default function Hero() {
         
         {/* Floating image - responsive for mobile/tablet, original for laptop+ */}
         <div className="overflow-clip h-2/5 md:h-auto md:w-3/5 rounded-full absolute blur z-9 aspect-square shadow-2xl shadow-muted opacity-0 animate-[fadeIn_0.3s_ease-in_0.7s_forwards]">
-        <div className="flex justify-center items-center h-full w-full">
-          <img src={men} className="menFloating md:w-auto md:h-auto h-24 " alt="Prashant Patil" /></div>
+        <div className="hidden md:flex justify-center items-center h-full w-full">
+          <img src={men} className="menFloating md:w-auto md:h-auto h-24 opacity-50" alt="Prashant Patil" /></div>
         </div>
         
         {/* Background circles - responsive for mobile/tablet, original for laptop+ */}
