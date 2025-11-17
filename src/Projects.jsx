@@ -16,20 +16,20 @@ export default function Projects() {
         <br className="hidden md:block" /> real-world problems.
       </p>
 
-      <div className="w-full flex flex-col my-8 md:my-16 gap-4 md:gap-8">
+      <div className="w-full flex flex-col my-8 md:my-16 gap-4 md:gap-24">
         {projects.map((project) => (
           <div
             key={project.id}
             className={`w-full md:w-3/5 mx-auto sticky ${project.stickyOffset} 
               md:h-fit
               bg-neutral-950 border border-white/10 
-              rounded-2xl md:rounded-4xl relative overflow-hidden grid md:grid-cols-2 `}
+              rounded-2xl md:rounded-3xl relative overflow-hidden grid md:grid-cols-2 `}
           >
             {/* Metallic parallax background */}
             <div className="absolute inset-0 -z-10  opacity-5 mix-blend-screen"></div>
 
             <div className="h-full w-full relative flex flex-col md:flex-row p-6 md:ps-12 md:pt-12">
-              <div className="w-full text-slate-100">
+              <div className="w-full">
                 <h3 className="text-xs font-light w-fit uppercase italic">
                   {project.tag}
                 </h3>
@@ -38,9 +38,9 @@ export default function Projects() {
                   {project.title}
                 </h1>
 
-                <div className="my-4 mb-8 md:mb-16">
-                      <h6 className="">{project.desc}</h6>
-                </div>
+                <p className="my-4 mb-8 md:mb-16 font-light">
+                      {project.desc}
+                </p>
 
                 <a
                   href={project.live}
