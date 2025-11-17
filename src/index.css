@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');@import "tailwindcss";
 
 @tailwind utilities;
 
@@ -9,6 +9,10 @@
     scrollbar-width: none; /* Firefox */
   }
 }
+
+* {
+  font-family: "Noto Sans", sans-serif;
+}
 @theme {
   --color-text: #e5ecf1; /* Light text (you can adjust as needed) */
   --color-background: #0d182d; /* Dark navy background */
@@ -18,6 +22,7 @@
   --color-accent-alt: #ef6025; /* Strong orange (Git logo) */
   --color-muted: #1f375a; /* Soft dark for cards/boxes */
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -165,3 +170,13 @@ background-size: cover;
 background-image: url("./assets/notebot.png");
 background-size: cover;
 }
+
+
+        .animate-scroll {
+          animation: scroll 22s linear infinite;
+        }
+
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }

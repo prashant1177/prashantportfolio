@@ -1,33 +1,26 @@
-import turtle from "./assets/turtle.gif";
-
 export default function Contact() {
   return (
     <div className="py-24 flex flex-col items-center justify-center px-4">
-      <div className="relative w-full max-w-5xl flex flex-col md:flex-row items-center justify-between gap-8 p-8 bg-primary rounded-4xl overflow-hidden animate-[glow_2s_ease-in-out_infinite]">
-        {/* Moving Turtle */}
-        <img
-          src={turtle}
-          className="moveTurtle absolute w-16 h-16 top-4 left-4 md:w-24 md:h-24"
-          alt="turtle"
-        />
+      <div className="w-full max-w-5xl flex flex-col items-center gap-10 p-10 bg-primary rounded-4xl">
 
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl text-center font-extrabold text-background z-10 hidden md:block">
+        <h1 className="text-3xl md:text-5xl font-extrabold text-background text-center">
           Connect with me
         </h1>
 
         {/* Social Icons */}
-        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 z-10">
+        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+
           {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/prashantjpatil49/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="w-14 h-14 md:w-16 md:h-16 bg-background rounded-2xl flex items-center justify-center hover:bg-muted transition">
+            <div className="w-16 h-16 md:w-20 md:h-20 bg-background rounded-2xl flex items-center justify-center hover:bg-muted transition">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6 md:w-7 md:h-7 text-primary"
+                className="w-7 h-7 md:w-8 md:h-8 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -42,10 +35,10 @@ export default function Contact() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="w-14 h-14 md:w-16 md:h-16 bg-background rounded-2xl flex items-center justify-center hover:bg-muted transition">
+            <div className="w-16 h-16 md:w-20 md:h-20 bg-background rounded-2xl flex items-center justify-center hover:bg-muted transition">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6 md:w-7 md:h-7 text-primary"
+                className="w-7 h-7 md:w-8 md:h-8 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -54,16 +47,16 @@ export default function Contact() {
             </div>
           </a>
 
-          {/* X (Twitter) */}
+          {/* X / Twitter */}
           <a
             href="https://x.com/prashu1177"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="w-14 h-14 md:w-16 md:h-16 bg-background rounded-2xl flex items-center justify-center hover:bg-muted transition">
+            <div className="w-16 h-16 md:w-20 md:h-20 bg-background rounded-2xl flex items-center justify-center hover:bg-muted transition">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6 md:w-7 md:h-7 text-primary"
+                className="w-7 h-7 md:w-8 md:h-8 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -74,10 +67,10 @@ export default function Contact() {
 
           {/* Email */}
           <a href="mailto:prashantjpatil@gmail.com">
-            <div className="w-14 h-14 md:w-16 md:h-16 bg-background rounded-2xl flex items-center justify-center hover:bg-muted transition">
+            <div className="w-16 h-16 md:w-20 md:h-20 bg-background rounded-2xl flex items-center justify-center hover:bg-muted transition">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6 md:w-7 md:h-7 text-primary"
+                className="w-7 h-7 md:w-8 md:h-8 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -85,6 +78,7 @@ export default function Contact() {
               </svg>
             </div>
           </a>
+
         </div>
       </div>
     </div>

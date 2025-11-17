@@ -1,3 +1,4 @@
+import About from "./About";
 import "./App.css";
 import Break from "./Break";
 import Contact from "./Contact";
@@ -7,25 +8,24 @@ import Projects from "./Projects";
 import Tech from "./Tech";
 function App() {
   return (
-    <div className="font-sans text-text">
+    <div className="bg-black  text-text">
       <Navbar />
-      <div id="home">
-        {" "}
+      <div id="home" >
         <Hero />
       </div>
-      <div id="project">
-        <Projects />{" "}
-      </div>
+      <div id="tech" className="relative">
+        <Tech />
       <Break/>
-      <div id="tech">
-        <Tech />{" "}
       </div>
-      <div id="connect">
-        {" "}
-        <Contact />
+      <div id="project">
+        <Projects />
       </div>
-      <hr />
-      <a href="#home"><p className="text-center py-2">BACK TO TOP</p></a>
+      <div id="about">
+        <About />
+      </div>
+      
+      
+      <a href="#home"><p className="text-center py-2 border-neutral-900 text-neutral-700 bg-gradient-to-r from-neutral-950/50 via-neutral-950/70 to-neutral-950/50 border">BACK TO TOP</p></a>
     </div>
   );
 }

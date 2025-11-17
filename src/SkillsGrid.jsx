@@ -1,79 +1,112 @@
-import React from 'react';
-import {
-  FaPython,
-  FaJava,
-  FaJsSquare,
-  FaDatabase,
-  FaReact,
-  FaNodeJs,
-  FaGit,
-  FaGithub,
-  FaAws,
-  FaHtml5,
-  FaCss3Alt,
-  FaBootstrap,
-  FaFigma,
-  FaCloud,
-} from 'react-icons/fa';
+import { useState } from "react";
 
-import {
-  SiMysql,
-  SiMongodb,
-  SiExpress,
-  SiTailwindcss,
-  SiJsonwebtokens,
-  SiReactrouter,
-  SiVercel,
-  SiCloudinary,
-  SiGooglecloud,
-  SiGithubactions,
-  SiCanva,
-  SiAdobephotoshop,
-  SiVite,
-} from 'react-icons/si';
+const TABS = {
+  "Frontend Development": [
+    "HTML5",
+    "CSS3",
+    "Responsive Design",
+    "React.js",
+    "React Hooks",
+    "React Router",
+    "Component Architecture",
+    "Nextjs",
+    "TailwindCSS",
+    "Bootstrap",
+    "DOM Manipulation",
+    "Performance Optimization",
+    "SEO Optimization",
+  ],
+ "Full-Stack Development": [
+    // Languages
+    "TypeScript",
+    "JavaScript (ES6+)",
+    "Python",
+    "Java",
+    "SQL",
+    "JSON",
+    "Bash/Shell Scripting",
 
-const iconStyle = 'flex items-center gap-2 px-3 py-2 border border-white text-white rounded-md hover:bg-white hover:text-black transition text-sm';
+    // Databases
+    "DBMS",
+    "MongoDB",
+    "MySQL",
+    "Schema Design",
+    "Indexing & Query Optimization",
+    "ACID Principles",
 
-const SkillsGrid = () => {
-  return (
-    <div className="flex flex-col gap-4 text-white z-10">
+    // DevOps + Cloud
+    "Git",
+    "GitHub",
+    "CI/CD Pipelines",
+    "Docker",
+    "Docker Compose",
+    "AWS",
+    "Vercel",
+    "Cloudinary",
+    "Version Control Workflows",
 
-      {/* Languages */}
-      <div>
-        <div className="flex flex-wrap gap-4 ">
-          <div className={iconStyle}><FaPython /> Python</div>
-          <div className={iconStyle}><FaJsSquare /> JavaScript</div>
-          <div className={iconStyle}><FaJava /> Java</div>
-          <div className={iconStyle}><FaDatabase /> SQL</div>
 
-          <div className={iconStyle}><FaReact /> React</div>
-          <div className={iconStyle}><FaNodeJs /> Node.js</div>
-          <div className={iconStyle}><SiExpress /> Express.js</div>
-          <div className={iconStyle}><SiJsonwebtokens /> JWT</div>
-          <div className={iconStyle}><SiReactrouter /> React Router</div>
-          <div className={iconStyle}><SiTailwindcss /> TailwindCSS</div>
-          <div className={iconStyle}><FaBootstrap /> Bootstrap</div>
-          <div className={iconStyle}><FaHtml5 /> HTML5</div>
-          <div className={iconStyle}><FaCss3Alt /> CSS3</div>
-          <div className={iconStyle}><SiVite /> Vite</div>
-          <div className={iconStyle}><FaAws /> AWS</div>
-          <div className={iconStyle}><FaGit /> Git</div>
-          <div className={iconStyle}><FaGithub /> GitHub</div>
-          <div className={iconStyle}><SiVercel /> Vercel</div>
-          <div className={iconStyle}><SiCloudinary /> Cloudinary</div>
-          <div className={iconStyle}><SiGooglecloud /> Google Cloud</div>
-          <div className={iconStyle}><SiGithubactions /> GitHub Actions</div>
-          
-          <div className={iconStyle}><SiMongodb /> MongoDB</div>
-          <div className={iconStyle}><SiMysql /> MySQL</div>
-          
-          <div className={iconStyle}><FaFigma /> Figma</div>
-          <div className={iconStyle}><SiCanva /> Canva</div>
-          <div className={iconStyle}><SiAdobephotoshop /> Photoshop</div>
-        </div>
-      </div>
-    </div>
-  );
+    // Other
+    "Debugging",
+    "Clean Code Practices",
+    "Agile Workflows",
+    "Team Collaboration",
+    "Problem Solving",
+    "Code Review",
+  ],
+  "Backend Development": [
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "Authentication",
+    "Authorization",
+    "JWT",
+    "Middleware Development",
+    "Microservices Basics",
+    "Server-Side Rendering (SSR)",
+    "Database Integration",
+    "Environment Variables & Config",
+  ],
+
+ 
 };
 
-export default SkillsGrid;
+const tabButton =
+  "px-4 py-2 text-sm rounded-md border border-white/20 hover:bg-white/10 transition";
+
+const itemStyle =
+  "px-3 py-2 border border-white/20 text-white rounded-md text-sm bg-white/5 backdrop-blur-sm";
+
+export default function SkillsGrid() {
+  const [active, setActive] = useState("Full-Stack Development");
+
+  return (
+    <div className="flex flex-col gap-6 text-white w-full">
+
+      {/* Tabs */}
+      <div className="grid grid-cols-3 gap-3 mb-4">
+        {Object.keys(TABS).map((tab) => (
+          <button
+            key={tab}
+            className={`${tabButton} ${
+              active === tab ? "bg-white text-black" : ""
+            }`}
+            onClick={() => setActive(tab)}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
+
+      {/* Skills */}
+      <div className="flex flex-wrap gap-3">
+        {TABS[active].map((skill) => (
+          <div key={skill} className={itemStyle}>
+            {skill}
+          </div>
+        ))}
+      </div>
+
+    </div>
+  );
+}
