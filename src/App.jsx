@@ -8,7 +8,7 @@ import Projects from "./Projects";
 import Tech from "./Tech";
 function App() {
   return (
-    <div className="bg-black  text-text">
+    <div className="bg-black min-h-screen selection:bg-indigo-500/30 selection:text-white overflow-x-hidden">
       <Navbar />
       <div id="home" >
         <Hero />
