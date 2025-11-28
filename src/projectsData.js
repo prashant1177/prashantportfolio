@@ -35,7 +35,7 @@ export const projects = [
     title: "Virtual Workspace",
     desc: "A real-time LaTeX editor with live preview, version history, and multi-user collaboration. It compiles instantly and includes an AI assistant to help format content and fix common LaTeX issues smoothly.",
     live: "https://notes-bot-nine.vercel.app/",
-    imageClass: "project3",
+    imageClass: "project4",
     stickyOffset: "top-48"
   }
 ];

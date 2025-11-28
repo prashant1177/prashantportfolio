@@ -167,9 +167,14 @@ background-image: url("./assets/job.png");
 background-size: cover;
 }
 .project3{
-background-image: url("./assets/notebot.png");
+background-image: url("./assets/latexwriter.png");
 background-size: cover;
 }
+.project4{
+background-image: url("./assets/vidash.png");
+background-size: cover;
+}
+
 
 
         .animate-scroll {
